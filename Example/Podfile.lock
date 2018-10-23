@@ -1,0 +1,16 @@
+PODS:
+  - OTUnwrapper (0.1.0)
+
+DEPENDENCIES:
+  - OTUnwrapper (from `../`)
+
+EXTERNAL SOURCES:
+  OTUnwrapper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OTUnwrapper: 1d9d80cf27f958783a7509206e774ceb46016f73
+
+PODFILE CHECKSUM: 6b04e1a7cd7142022e4c248d54a6d18175b016e4
+
+COCOAPODS: 1.5.3

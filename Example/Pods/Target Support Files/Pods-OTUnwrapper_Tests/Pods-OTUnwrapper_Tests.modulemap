@@ -1,0 +1,6 @@
+framework module Pods_OTUnwrapper_Tests {
+  umbrella header "Pods-OTUnwrapper_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

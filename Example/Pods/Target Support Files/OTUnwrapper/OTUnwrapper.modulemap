@@ -1,0 +1,6 @@
+framework module OTUnwrapper {
+  umbrella header "OTUnwrapper-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OTUnwrapper_Example' do
+  pod 'OTUnwrapper', :path => '../'
+
+  target 'OTUnwrapper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
