@@ -7,18 +7,44 @@
 //
 
 import UIKit
+import OTUnwrapper
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    var optionalString: String?  = nil
+    var optionalArray: [String]? = nil
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        optionalArray = ["One","Two"]
+        
+        let value             = optionalString.unwrap("The string is nil")
+        let arrValue:[String] = optionalArray.unwrap()
+        
+        print(value)
+        print(arrValue)
+        
+        dataToJSON()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func dataToJSON()
+    {
+        guard let path = Bundle.main.path(forResource: "UserJSON", ofType: "json") else { return }
+        
+        do
+        {
+            let data       = try Data(contentsOf: URL(fileURLWithPath: path))
+            let json       = data.unwrapToJSON()
+            let user: User = json.unwrapToObject("user")
+            
+            print(user)
+        }
+        catch
+        {
+           
+        }
     }
-
 }
 

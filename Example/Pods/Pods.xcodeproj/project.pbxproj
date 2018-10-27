@@ -9,10 +9,17 @@
 /* Begin PBXBuildFile section */
 		01DF3686432D7F5EE72E03C75206FF1A /* Pods-OTUnwrapper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D9FD9B283C32404C61FF8847D2947D /* Pods-OTUnwrapper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0554BBB8457C52E500F5B1C8DF86BBD8 /* Pods-OTUnwrapper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D97F5C66F72AD25914E8796DC0638831 /* Pods-OTUnwrapper_Tests-dummy.m */; };
-		172D444CC470481F7F70117F00AE72CC /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B632CD97B8F60E1F178F206CC561B5A /* ReplaceMe.swift */; };
 		18FA8B59553364AB39EEB701EFA24EB0 /* Pods-OTUnwrapper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 554D7592E20AEA74EB06E81FA653574E /* Pods-OTUnwrapper_Example-dummy.m */; };
 		3D19CFB5FEE18E8681F36F0FB76DAEF3 /* OTUnwrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B82EA72960EF942C2384E6DDD8E669EE /* OTUnwrapper-dummy.m */; };
 		545EBC35FC29CF486DCDC607FFD57650 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		7C0D250A217FAF9100FD2133 /* OTUnwrappedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0D2509217FAF9100FD2133 /* OTUnwrappedValue.swift */; };
+		7C0D250D217FB19B00FD2133 /* OTUnwrappedObjectsExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0D250C217FB19B00FD2133 /* OTUnwrappedObjectsExtentions.swift */; };
+		7C0D250F217FB1E000FD2133 /* OTDictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0D250E217FB1E000FD2133 /* OTDictionaryExtensions.swift */; };
+		7C0D2511217FB20F00FD2133 /* OTDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0D2510217FB20F00FD2133 /* OTDataExtensions.swift */; };
+		7C0D25152180531300FD2133 /* OTUnwrappedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0D25142180531300FD2133 /* OTUnwrappedObject.swift */; };
+		7C0D25172180538A00FD2133 /* OTUnwrapperGlobalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0D25162180538A00FD2133 /* OTUnwrapperGlobalMethods.swift */; };
+		7CD58B552184497E008B6CDD /* OTOptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD58B542184497E008B6CDD /* OTOptionalExtensions.swift */; };
+		7CD58B5921845219008B6CDD /* OTUnwrappedValueExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD58B5821845219008B6CDD /* OTUnwrappedValueExtensions.swift */; };
 		84B688D3F388D3051AFBB213C0160F1F /* Pods-OTUnwrapper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5070088AB8420D758226F6BBD532D713 /* Pods-OTUnwrapper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB2ED1DE6DC9523A0D775711A03D9000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		D8ED93558F218CEDF03D9F88D84C4F7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
@@ -37,25 +44,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		13F159C8A6FAF96A8EA25144E6058388 /* Pods_OTUnwrapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OTUnwrapper_Tests.framework; path = "Pods-OTUnwrapper_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F159C8A6FAF96A8EA25144E6058388 /* Pods_OTUnwrapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTUnwrapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		170AE8E8B4B7563801A3318B4479CF74 /* Pods-OTUnwrapper_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OTUnwrapper_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		19DB75431BCD3E60B5E0F8581EBD2838 /* Pods_OTUnwrapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OTUnwrapper_Example.framework; path = "Pods-OTUnwrapper_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DB75431BCD3E60B5E0F8581EBD2838 /* Pods_OTUnwrapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OTUnwrapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E41B527506EBE5C2EF1DA9FF150E87C /* Pods-OTUnwrapper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OTUnwrapper_Example.modulemap"; sourceTree = "<group>"; };
 		295B4948F340F079159566E599B7D713 /* Pods-OTUnwrapper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OTUnwrapper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3917057165E4134F5DE4B7C03C21AE70 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3917057165E4134F5DE4B7C03C21AE70 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4B0D4B4CE9532821DB3734CF3C1A6E61 /* Pods-OTUnwrapper_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OTUnwrapper_Tests-resources.sh"; sourceTree = "<group>"; };
 		5070088AB8420D758226F6BBD532D713 /* Pods-OTUnwrapper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OTUnwrapper_Example-umbrella.h"; sourceTree = "<group>"; };
 		554D7592E20AEA74EB06E81FA653574E /* Pods-OTUnwrapper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OTUnwrapper_Example-dummy.m"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5F29EA0CFEB0CFDCA0AE5EC78DF9C2C1 /* Pods-OTUnwrapper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTUnwrapper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		64D9FD9B283C32404C61FF8847D2947D /* Pods-OTUnwrapper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OTUnwrapper_Tests-umbrella.h"; sourceTree = "<group>"; };
-		666DB3D7841BFCC019BCC7AEF52FB814 /* OTUnwrapper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = OTUnwrapper.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		6B632CD97B8F60E1F178F206CC561B5A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = OTUnwrapper/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		666DB3D7841BFCC019BCC7AEF52FB814 /* OTUnwrapper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = OTUnwrapper.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		78CB5EA12E89310492EE1EA56A102EF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C0D2509217FAF9100FD2133 /* OTUnwrappedValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUnwrappedValue.swift; sourceTree = "<group>"; };
+		7C0D250C217FB19B00FD2133 /* OTUnwrappedObjectsExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUnwrappedObjectsExtentions.swift; sourceTree = "<group>"; };
+		7C0D250E217FB1E000FD2133 /* OTDictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTDictionaryExtensions.swift; sourceTree = "<group>"; };
+		7C0D2510217FB20F00FD2133 /* OTDataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTDataExtensions.swift; sourceTree = "<group>"; };
+		7C0D25142180531300FD2133 /* OTUnwrappedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUnwrappedObject.swift; sourceTree = "<group>"; };
+		7C0D25162180538A00FD2133 /* OTUnwrapperGlobalMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUnwrapperGlobalMethods.swift; sourceTree = "<group>"; };
+		7CD58B542184497E008B6CDD /* OTOptionalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTOptionalExtensions.swift; sourceTree = "<group>"; };
+		7CD58B5821845219008B6CDD /* OTUnwrappedValueExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUnwrappedValueExtensions.swift; sourceTree = "<group>"; };
 		7ECB26B7CA878EB55D1932EBC529C22B /* Pods-OTUnwrapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTUnwrapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		817E75E6E87B75A2003D32464AED0F90 /* Pods-OTUnwrapper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OTUnwrapper_Tests.modulemap"; sourceTree = "<group>"; };
 		860BBF32FF39280B7CE19F16563B623D /* Pods-OTUnwrapper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OTUnwrapper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B5313B6117461EC8876759EAA52F16E /* Pods-OTUnwrapper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OTUnwrapper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9BA129F1675BFCBFC5EB73F31F77AE41 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DA91E75C94BAB9EAFC6EC79E9D35BE7 /* OTUnwrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OTUnwrapper-prefix.pch"; sourceTree = "<group>"; };
@@ -63,14 +77,14 @@
 		B65F2CE583FC8473E1977FD4580C1027 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B82EA72960EF942C2384E6DDD8E669EE /* OTUnwrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OTUnwrapper-dummy.m"; sourceTree = "<group>"; };
 		BCAEA0BC77FB6D9E460D6E9123860A07 /* Pods-OTUnwrapper_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OTUnwrapper_Example-resources.sh"; sourceTree = "<group>"; };
-		C5B36375DC7607DBC5EFBDD9956233CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C5B36375DC7607DBC5EFBDD9956233CF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CD28B1B28D9D85FFEDF84289C362E4F7 /* Pods-OTUnwrapper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OTUnwrapper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D198892A6D885DDB91E3A580D57DB8B8 /* Pods-OTUnwrapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTUnwrapper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D90B8CF88F676956CCFA943D2EEE5B96 /* OTUnwrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OTUnwrapper.xcconfig; sourceTree = "<group>"; };
 		D97F5C66F72AD25914E8796DC0638831 /* Pods-OTUnwrapper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OTUnwrapper_Tests-dummy.m"; sourceTree = "<group>"; };
 		E86F3AC9EF84417DA7766199E7E9105C /* OTUnwrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OTUnwrapper-umbrella.h"; sourceTree = "<group>"; };
 		EAF43E66955FFEA0331F9CED3D58A518 /* Pods-OTUnwrapper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OTUnwrapper_Example-frameworks.sh"; sourceTree = "<group>"; };
-		FCDB640EED05BC8785B4B4F121823002 /* OTUnwrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OTUnwrapper.framework; path = OTUnwrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCDB640EED05BC8785B4B4F121823002 /* OTUnwrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OTUnwrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE759BBB8C7F9EA6B34F304AFF93EC94 /* Pods-OTUnwrapper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTUnwrapper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +184,27 @@
 			path = "Target Support Files/Pods-OTUnwrapper_Example";
 			sourceTree = "<group>";
 		};
+		7C0D2508217FAF7D00FD2133 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7C0D2509217FAF9100FD2133 /* OTUnwrappedValue.swift */,
+				7C0D25142180531300FD2133 /* OTUnwrappedObject.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7C0D250B217FAFA600FD2133 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7C0D250C217FB19B00FD2133 /* OTUnwrappedObjectsExtentions.swift */,
+				7C0D250E217FB1E000FD2133 /* OTDictionaryExtensions.swift */,
+				7C0D2510217FB20F00FD2133 /* OTDataExtensions.swift */,
+				7CD58B542184497E008B6CDD /* OTOptionalExtensions.swift */,
+				7CD58B5821845219008B6CDD /* OTUnwrappedValueExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +219,9 @@
 		80A4FF890E4CA3149FD331F5B513B11B /* OTUnwrapper */ = {
 			isa = PBXGroup;
 			children = (
-				6B632CD97B8F60E1F178F206CC561B5A /* ReplaceMe.swift */,
+				7C0D25162180538A00FD2133 /* OTUnwrapperGlobalMethods.swift */,
+				7C0D250B217FAFA600FD2133 /* Extensions */,
+				7C0D2508217FAF7D00FD2133 /* Protocols */,
 				5C544BA48F3681DF9E514FF1FF95B959 /* Pod */,
 				27BF64A50C0543CDB64CB490B973ED31 /* Support Files */,
 			);
@@ -320,7 +357,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1000;
+				TargetAttributes = {
+					B570F44CCE73437A260AE4BA359D905F = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -370,8 +412,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C0D25152180531300FD2133 /* OTUnwrappedObject.swift in Sources */,
+				7C0D250F217FB1E000FD2133 /* OTDictionaryExtensions.swift in Sources */,
+				7C0D2511217FB20F00FD2133 /* OTDataExtensions.swift in Sources */,
 				3D19CFB5FEE18E8681F36F0FB76DAEF3 /* OTUnwrapper-dummy.m in Sources */,
-				172D444CC470481F7F70117F00AE72CC /* ReplaceMe.swift in Sources */,
+				7C0D250A217FAF9100FD2133 /* OTUnwrappedValue.swift in Sources */,
+				7CD58B5921845219008B6CDD /* OTUnwrappedValueExtensions.swift in Sources */,
+				7C0D250D217FB19B00FD2133 /* OTUnwrappedObjectsExtentions.swift in Sources */,
+				7CD58B552184497E008B6CDD /* OTOptionalExtensions.swift in Sources */,
+				7C0D25172180538A00FD2133 /* OTUnwrapperGlobalMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D90B8CF88F676956CCFA943D2EEE5B96 /* OTUnwrapper.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -468,8 +518,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -482,6 +531,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D90B8CF88F676956CCFA943D2EEE5B96 /* OTUnwrapper.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -565,6 +615,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -727,8 +778,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
