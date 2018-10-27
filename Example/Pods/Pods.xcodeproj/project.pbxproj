@@ -63,7 +63,7 @@
 		7C0D250E217FB1E000FD2133 /* OTDictionaryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTDictionaryExtensions.swift; sourceTree = "<group>"; };
 		7C0D2510217FB20F00FD2133 /* OTDataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTDataExtensions.swift; sourceTree = "<group>"; };
 		7C0D25142180531300FD2133 /* OTUnwrappedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUnwrappedObject.swift; sourceTree = "<group>"; };
-		7C0D25162180538A00FD2133 /* OTUnwrapperGlobalMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUnwrapperGlobalMethods.swift; sourceTree = "<group>"; };
+		7C0D25162180538A00FD2133 /* OTUnwrapperGlobalMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OTUnwrapperGlobalMethods.swift; path = OTUnwrapper/Classes/OTUnwrapperGlobalMethods.swift; sourceTree = "<group>"; };
 		7CD58B542184497E008B6CDD /* OTOptionalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTOptionalExtensions.swift; sourceTree = "<group>"; };
 		7CD58B5821845219008B6CDD /* OTUnwrappedValueExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTUnwrappedValueExtensions.swift; sourceTree = "<group>"; };
 		7ECB26B7CA878EB55D1932EBC529C22B /* Pods-OTUnwrapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OTUnwrapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,7 +190,8 @@
 				7C0D2509217FAF9100FD2133 /* OTUnwrappedValue.swift */,
 				7C0D25142180531300FD2133 /* OTUnwrappedObject.swift */,
 			);
-			path = Protocols;
+			name = Protocols;
+			path = OTUnwrapper/Classes/Protocols;
 			sourceTree = "<group>";
 		};
 		7C0D250B217FAFA600FD2133 /* Extensions */ = {
@@ -202,7 +203,8 @@
 				7CD58B542184497E008B6CDD /* OTOptionalExtensions.swift */,
 				7CD58B5821845219008B6CDD /* OTUnwrappedValueExtensions.swift */,
 			);
-			path = Extensions;
+			name = Extensions;
+			path = OTUnwrapper/Classes/Extensions;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
