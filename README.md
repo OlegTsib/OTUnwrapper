@@ -17,10 +17,10 @@ OTUnwrapper
 2. [Installation](#installation)
 3. [Opportunities](#opportunities)
 4. [How to Use](#howToUse) 
-5.[Unwrap Optional Value](#optionalValue)
-6.[Unwrap Data to JSON](#dataToJson)
-7.[Unwrap JSON value](#jsonValue)
-8.[Unwrap JSON object](#jsonObject)
+5. [Unwrap Optional Value](#optionalValue)
+6. [Unwrap Data to JSON](#dataToJson)
+7. [Unwrap JSON value](#jsonValue)
+8. [Unwrap JSON object](#jsonObject)
 
 <a name="requirements"/>
 
