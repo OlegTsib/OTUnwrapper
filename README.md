@@ -61,6 +61,7 @@ $ pod install
 3. Unwrap JSON value
 4. Unwrap JSON to Object
 5. Unwrap with default value
+
 <a name="howToUse"/>
 
 # How to Use:
@@ -70,6 +71,7 @@ $ pod install
 import OTUnwrapper
 ```
 <a name="optionalValue"/>
+
 ## Unwrap Optional Value:
 <h5>You have two ways to unwrap optional</h5>
 ##Without default value:
@@ -95,6 +97,7 @@ let value2 = optionalString2.unwrap("Value is nil")  //  value2 = "String is not
 ```
 
 <a name="dataToJson"/>
+
 ## Unwrap Data to JSON
 ### Example: 
 ```swift
@@ -102,6 +105,7 @@ let data = [DATA]
 let json = data.unwrapToJSON()
 ```
 <a name="jsonValue"/>
+
 ## Unwrap JSON value
 ### Example: 
 ```swift
