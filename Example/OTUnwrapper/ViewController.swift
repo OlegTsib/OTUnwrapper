@@ -37,6 +37,8 @@ class ViewController: UIViewController
         {
             let data       = try Data(contentsOf: URL(fileURLWithPath: path))
             let json       = data.unwrapToJSON()
+            
+            //let ff: String = json.unwrapValue("user",[String:Any]()).unwrapValue("email")
             let user: User = json.unwrapToObject("user")
             
             print(user)
